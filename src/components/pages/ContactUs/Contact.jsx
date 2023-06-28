@@ -6,11 +6,9 @@ import "aos/dist/aos.css";
 
 import ourHeadquater from "../../../images/contact/contact-our-headquater.png";
 
-
 import OfficeAdd from "../utils/OfficeAdd";
 import { contactMediaList, officeAddList } from "./contactData";
 import Header from "../../Regular/Header";
-
 
 const Contact = () => {
   useEffect(() => {
@@ -214,20 +212,25 @@ const Contact = () => {
               onChange={(e) => setSubject(e.target.value)}
             />
           </div>
-          {/*  checkbox */}
-          <div className="flex items-center justify-start gap-3 mt-3 sm:items-start sm:justify-start">
-            <input className="text-[18px] h-[14px] w-[14px]" type="checkbox" />
-            <p className="text-[14px]">
-              You accept the terms of service and the privacy policy
-            </p>
-          </div>
+          <div className="mr-[520px]">
+            {/*  checkbox */}
+            <div className="flex items-center justify-start gap-3 mt-3 sm:items-start sm:justify-start">
+              <input
+                className="text-[18px] h-[14px] w-[14px]"
+                type="checkbox"
+              />
+              <p className="text-[14px]">
+                You accept the terms of service and the privacy policy
+              </p>
+            </div>
 
-          <button
-            className="my-4 font-bold w-[170px] h-[40px] rounded-[55px] text-white bg-[#094C99] "
-            onClick={messageSendHandler}
-          >
-            Send message
-          </button>
+            <button
+              className="my-4 font-bold w-[170px] h-[40px] rounded-[55px] text-white bg-[#094C99] "
+              onClick={messageSendHandler}
+            >
+              Send message
+            </button>
+          </div>
         </div>
       </div>
     </>
