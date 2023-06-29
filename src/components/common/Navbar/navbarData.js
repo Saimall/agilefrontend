@@ -6,21 +6,21 @@ export const homeList = [
   {
     title: "Driver",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
+      " w-[150px] text-center cursor-pointer px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
     url: "/our-driver",
   },
 
   {
     title: "Services",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
+      "cursor-pointer w-[150px] text-center px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
     url: "/services",
   },
 
   {
     title: "About Us",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
+      "cursor-pointer w-[150px] text-center px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
     url: "/about",
   },
 ];
@@ -115,7 +115,7 @@ export const navbarMenuList = [
     url: null,
     otherProps: homeList,
     className:
-      "home-nav-desk-animation-ul flex items-center justify-center h-[93px]",
+      "home-nav-desk-animation-ul flex items-center justify-center h-[93px] ",
   },
   {
     title: "Solutions",
@@ -127,21 +127,21 @@ export const navbarMenuList = [
   },
   {
     title: " Partner Model",
-    className: "cursor-pointer",
+    className: "cursor-pointer m-5",
     Children: null,
     otherProps: null,
     url: "/partner",
   },
   {
     title: "Careers",
-    className: "cursor-pointer",
+    className: "cursor-pointer m-10",
     Children: null,
     otherProps: null,
     url: "/career",
   },
   {
     title: "Contact Us",
-    className: "cursor-pointer",
+    className: "cursor-pointer m-10",
     Children: null,
     otherProps: null,
     url: "/contact",

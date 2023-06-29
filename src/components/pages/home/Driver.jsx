@@ -43,7 +43,7 @@ const Driver = () => {
               <p className="text-[32px] sm:text-[40px] md:text-[48px] font-bold leading-[58px] text-center md:text-start">
                 OUR DRIVERS
               </p>
-              <p className="text-[24px] leading-[30px] text-center md:text-start">
+              <p className="text-[20px] sm-w[320px] p-8 m-4 leading-[30px] text-left md:text-start">
                 Since our inception there are certain Drivers that have
                 constantly pushed our business to be a constantly evolving
                 Solutions provider. The insatiable quest to outperform and
@@ -54,9 +54,9 @@ const Driver = () => {
               </p>
             </div>
           ))}
-
+{/*transition ease-in-out delay-150*/}
           <img
-            className="transition ease-in-out delay-150  hover:scale-110  md:w-[300px] rounded-xl lg:w-[500px] xl:w-full"
+            className=" w-[500px] h-[600px] hover:scale-110  md:w-[840px] items-left rounded-xl lg:w-[850px] xl:w-full"
             src={firstImg}
             alt=""
           />
@@ -75,7 +75,7 @@ const Driver = () => {
             src={thirdImg}
             alt=""
           />
-          <p className="mt-[-40px] text-[24px] text-center sm:text-start leading-[29px]">
+          <p className="mt-[-40px] text-[20px] p-5 text-center sm:text-start leading-[29px]">
             Ranked and recognized as the FASTEST growing company among
             Sacramento’s 100 fastest, Sacramento Business Journal – 2007, 2010,
             2011, 2012, 2013 and 2016.
@@ -94,7 +94,7 @@ const Driver = () => {
               src={secondImg}
               alt=""
             />
-            <p className="mt-10 text-[24px] text-center sm:text-start leading-[29px]">
+            <p className="mt-10 text-[20px] p-5 text-center sm:text-start leading-[29px]">
               Ranked and recognized as the FASTEST growing company among
               Sacramento’s 100 fastest, Sacramento Business Journal – 2007,
               2010, 2011, 2012, 2013 and 2016.
@@ -107,7 +107,7 @@ const Driver = () => {
               src={forthImg}
               alt=""
             />
-            <p className="mt-[-40px] text-[24px] text-center sm:text-start leading-[29px]">
+            <p className="mt-[-40px] text-[20px] p-5 text-center sm:text-start leading-[29px]">
               Ranked and recognized as the FASTEST growing company among
               Sacramento’s 100 fastest, Sacramento Business Journal – 2007,
               2010, 2011, 2012, 2013 and 2016.
@@ -121,7 +121,7 @@ const Driver = () => {
         className="  mt-20 flex flex-col items-center justify-center p-3 "
       >
         {/* title */}
-        <h2 className="text-[28px] md:text-[48px] font-bold my-4">
+        <h2 className="text-[28px] md:text-[48px] text-center font-bold my-4">
           OUR PARTIAL CLIENT LIST
         </h2>
         {/* hr line */}

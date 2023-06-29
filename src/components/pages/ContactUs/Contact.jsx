@@ -77,7 +77,7 @@ const Contact = () => {
         className="contact-our-headquater-bg w-screen   mt-24 md:mt-24 flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:h-[450px] "
       >
         {/* text content */}
-        <div className=" text-white flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mt-[50px] mb-[-10px] lg:mb-[-30px] px-5">
+        <div className=" text-white flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mt-[50px] mb-[-10px] lg:mb-[-30px] h-[400px] px-5">
           <p className="text-[30px] md:text-[40px] font-bold mb-2">
             Our Headquater
           </p>
