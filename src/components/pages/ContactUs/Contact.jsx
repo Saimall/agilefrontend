@@ -99,13 +99,13 @@ const Contact = () => {
             </a>
           </p>
           {/* social imgs */}
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 animate-bounce">
             {contactMediaList?.map((elem) => (
               <img
                 key={elem?.icon}
                 src={elem?.icon}
                 alt=""
-                className="h-[30px] w-[30px]"
+                className="h-[30px] w-[30px] "
               />
             ))}
           </div>
@@ -113,7 +113,7 @@ const Contact = () => {
         {/* img div */}
         <div>
           <img
-            className="h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] md:h-[500px] md:w-[500px] mt-[-50px] md:mt-[80px]"
+            className="h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] md:h-[500px] md:w-[500px] mt-[-50px] md:mt-[80px] hover:scale-90"
             src={ourHeadquater}
             alt=""
           />
@@ -225,7 +225,7 @@ const Contact = () => {
             </div>
 
             <button
-              className="my-4 font-bold w-[170px] h-[40px] rounded-[55px] text-white bg-[#094C99] "
+              className="my-4 font-bold w-[170px] h-[40px] rounded-[55px] text-white bg-[#094C99] animate-bounce"
               onClick={messageSendHandler}
             >
               Send message

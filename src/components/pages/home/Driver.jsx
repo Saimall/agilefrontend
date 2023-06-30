@@ -56,7 +56,7 @@ const Driver = () => {
           ))}
 {/*transition ease-in-out delay-150*/}
           <img
-            className=" w-[500px] h-[600px] hover:scale-110  md:w-[840px] items-left rounded-xl lg:w-[850px] xl:w-full"
+            className=" w-[500px] h-[600px] hover:scale-110  md:w-[840px] items-left rounded-xl lg:w-[850px] xl:w-full scale-100 "
             src={firstImg}
             alt=""
           />
@@ -69,7 +69,7 @@ const Driver = () => {
         className="flex flex-col md:flex-row flex-wrap  items-center justify-center lg:justify-evenly gap-10 px-3"
       >
         {/* only 1 card div */}
-        <div className="w-full sm:w-[350px] xl:w-[426px]">
+        <div className="w-full sm:w-[350px] xl:w-[426px] outline-dotted outline outline-offset-2 outline-blue-500">
           <img
             className="transition  ease-in-out delay-150  hover:scale-110"
             src={thirdImg}
@@ -88,7 +88,7 @@ const Driver = () => {
           className="flex flex-col items-center justify-center "
         >
           {/* card 1 */}
-          <div className="w-full sm:w-[350px] xl:w-[426px]">
+          <div className="w-full sm:w-[350px] xl:w-[426px] ">
             <img
               className="transition  ease-in-out delay-150  hover:scale-110"
               src={secondImg}

@@ -120,7 +120,7 @@ const BusinessIntelligence = () => {
           {productList?.map((elem) => (
             <div
               key={elem?.title}
-              className="rounded-[16px] h-[90px] bg-[#023267] gap-3 flex  justify-center p-3 px-5 md:w-[401px]"
+              className=" rounded-[16px] h-[90px] bg-[#023267] gap-3 flex  justify-center p-3 px-5 md:w-[401px]"
             >
               <ServicesChecklist
                 key={elem?.title}

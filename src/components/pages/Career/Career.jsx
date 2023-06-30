@@ -141,7 +141,7 @@ const Career = () => {
       <Header image="careers-bg-img" title="Achieve Highest with us" />
       {/* Ready to make impact? */}
       <div data-aos="zoom-in" className="mt-9">
-        <p className="text-[25px] sm:text-[28px] md:text-[30px] text-center text-[#023267]  font-semibold  ">
+        <p className="text-[25px] sm:text-[28px] md:text-[30px] text-center text-[#023267]  font-semibold  animate-bounce">
           Ready to make impact?
         </p>
 
@@ -213,7 +213,7 @@ const Career = () => {
 
        <div
         data-aos="fade-up"
-        className=" flex items-center justify-center my-[44px] md:px-10 lg:px-20 xl:px-44"
+        className="w-[1500px] flex items-center justify-center ml-[20px] md:px-10 lg:px-20 xl:px-44"
       >
         <Slider className="slider-outter-bus w-[80vw]   " {...settings}>
           {/* card div 1*/}
@@ -235,7 +235,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural 1 technologist
                 </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -266,7 +266,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural technologist
                 </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -297,7 +297,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural technologist
                 </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -310,7 +310,7 @@ const Career = () => {
           </div>
 
           {/* card div 4*/}
-          <div className="relative ml-[90px] h-[370px] w-[100px] bg-red-500">
+          <div className="relative ml-[90px] h-[370px] w-[100px] ">
             <img
               className="absoute top-0 left-0"
               src={sliderBluevector}
@@ -328,7 +328,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural technologist
                 </p>
-                <p className="text-[15px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[15px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>

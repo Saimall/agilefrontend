@@ -60,7 +60,7 @@ const Navbar = () => {
         <div>
           <Link to="/">
             <img
-              className="md:ml-4 w-[120px] h-[35px] my-3 lg:my-0 mr-16"
+              className="animate-bounce md:ml-4 w-[120px] h-[35px] my-3 lg:my-0 mr-16"
               src={logo}
               alt="logo"
             />
@@ -103,10 +103,10 @@ const Navbar = () => {
       {ShowMobileNavDiv && (
         <div
           ref={oneRef}
-          className="home-nav-desk-animation-links z-10 mobile-nav-drop-shadow absolute top-[65px] h-full w-full bg-white "
+          className="home-nav-desk-animation-links z-10 mobile-nav-drop-shadow absolute h-full w-full bg-white "
         >
-          <div className="flex items-center justify-center text-[18px] sm:text-[20px] gap-6  ">
-            <ul className="block items-center justify-center text-[34px] lg:hidden font-bold top-[65px] ">
+          <div className="flex items-center justify-center text-[18px] sm:text-[20px] gap-6 m-[120px]  "> {/*position */}
+            <ul className="block items-center justify-center text-[34px] lg:hidden font-bold  ">
               {navbarMenuList?.map((elem) => {
                 return (
                   <NavbarOption elem={elem} className="bg-red-500" onHandleClick={onHandleClick} />

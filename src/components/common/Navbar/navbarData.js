@@ -6,21 +6,21 @@ export const homeList = [
   {
     title: "Driver",
     className:
-      " w-[150px] text-center cursor-pointer px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
+      " hover:bg-gradient-to-r from-indigo-500 w-[150px] text-center cursor-pointer px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
     url: "/our-driver",
   },
 
   {
     title: "Services",
     className:
-      "cursor-pointer w-[150px] text-center px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer w-[150px] text-center px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
     url: "/services",
   },
 
   {
     title: "About Us",
     className:
-      "cursor-pointer w-[150px] text-center px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer w-[150px] text-center px-2 py-1 text-[18px] rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]",
     url: "/about",
   },
 ];
@@ -30,79 +30,79 @@ export const solutionList = [
   {
     title: "Emerging Technologies",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/emerging-tehcnologies",
   },
 
   {
     title: "Virtual & Agumented Reality",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/virtual-and-agumented-reality",
   },
 
   {
     title: "Custom Application",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/custom-application",
   },
 
   {
     title: " Enterprise Application",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/enterprise-application",
   },
   {
     title: " Business Intelligence",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/business-intelligence",
   },
   {
     title: "Infrastructure",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/infrastructure",
   },
   {
     title: "Mobile Business",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/mobile-business",
   },
 
   {
     title: "Utility Solutions",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/utility-solutions",
   },
   {
     title: "Government",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/government",
   },
 
   {
     title: " Professional Consulting",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/professional-consulting",
   },
   {
     title: " Strategic Outsourcing",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/strategic-outsourcing",
   },
 
   {
     title: "Co-Managed Services",
     className:
-      "cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
+      "hover:bg-gradient-to-r from-indigo-500 cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]",
     url: "/co-managed-services",
   },
 ];

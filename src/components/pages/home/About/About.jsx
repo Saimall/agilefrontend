@@ -151,11 +151,11 @@ const About = () => {
         className="  flex sm:flex-row flex-wrap items-center  justify-center gap-0 mt-28"
       >
         <p className="text-[30px] sm:text-[40px] md:text-[48px] leading-[58px] font-semibold text-center sm:text-start lg:w-[300px] my-7">
-          Our <span className="text-[#17519B] "> Recognitions</span> & Awards
+          Our <span className="text-[#17519B] animate-pulse "> Recognitions</span> & Awards
         </p>
 
         {/* blue and white boxs div starts  */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 py-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 py-12 ">
           {/*blue box 1  */}
           {awardList?.map((elem) => (
             <AwardCard elem={elem} />
@@ -175,7 +175,7 @@ const About = () => {
         />
         {/* our mission text */}
         <div className=" xl:mr-72  h-full w-full flex flex-col justify-between">
-          <p className="font-bold text-center text-[30px] sm:text-[48px] md:text-[64px] text-white ">
+          <p className="font-bold text-center text-[30px] sm:text-[48px] md:text-[64px] text-white animate-bounce">
             Our Mission
           </p>
 
@@ -201,7 +201,7 @@ const About = () => {
           <div className=" flex sm:flex-row items-center justify-center gap-12">
             <p className="text-[30px] sm:text-[44px] md:text[64px] text-white  font-semibold">
               Our
-              <span className="text-[40px] sm:text-[54px] md:text-[84px] lg:text-[96px] ">
+              <span className="text-[40px] sm:text-[54px] md:text-[84px] lg:text-[96px] animate-ping">
                 8
               </span>
               Core Values
