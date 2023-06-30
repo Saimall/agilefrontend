@@ -64,7 +64,7 @@ const About = () => {
         {/* card 1 */}
         {gobalSolution?.map((elem) => (
           <div
-            className="hover-drop-shadow relative rounded-[8px] home-sol-outter-card-1-eff w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white"
+            className="hover-drop-shadow relative hover:scale-90 w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white"
             key={elem?.title}
           >
             <img
