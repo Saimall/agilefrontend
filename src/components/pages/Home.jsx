@@ -214,7 +214,7 @@ const Home = () => {
 						<img className='md:w-[330px] lg:w-[400px] xl:w-[400px]' src={homeRecoDate} alt="" />
 
 						<div className=' flex flex-col items-center justify-center text-center md:text-start md:items-start md:justify-start lg:w-[46%]'>
-							<h3 className='text-[28px] md:text-[30px] font-bold my-6'>Set your schedule</h3>
+							<h3 className='text-[28px] md:text-[30px] font-bold my-6 underline decoration-4underline decoration-4 '>Set your schedule</h3>
 							<p className='text-[#7D7987] text-[16px] leading-[30px]'>Take complete control over available hours and services</p>
 							<p className='text-[#7D7987] text-[16px] leading-[30px] my-2'>Accept or reject new clients at your convenience
 								Manage schedule with built in task management tools </p>
@@ -232,7 +232,7 @@ const Home = () => {
 						<img className='md:w-[336px] lg:w-[410px] xl:w-[400px]' src={homeReco2} alt="" />
 
 						<div className=' flex flex-col items-center justify-center text-center md:text-start md:items-start md:justify-start lg:w-[46%]'>
-							<h3 className='text-[28px] md:text-[30px] font-bold my-6'>Manage Documents</h3>
+							<h3 className='text-[28px] md:text-[30px] font-bold my-6 underline decoration-4' >Manage Documents</h3>
 							<p className='text-[#7D7987] text-[16px] leading-[30px]'>Manage your forms, plans, and evaluations with our customizable library</p>
 							<p className='text-[#7D7987] text-[16px] leading-[30px] my-2'>Manage progress notes with the click of a button from any device </p>
 							<p className='text-[#7D7987] text-[16px] leading-[30px]'>
@@ -249,7 +249,7 @@ const Home = () => {
 						<img className='md:w-[336px] lg:w-[410px] xl:w-[400px]' src={homeRecoDate} alt="" />
 
 						<div className=' flex flex-col items-center justify-center text-center md:text-start md:items-start md:justify-start lg:w-[46%]'>
-							<h3 className='text-[28px] md:text-[30px] font-bold my-6'>Manage Billing</h3>
+							<h3 className='text-[28px] md:text-[30px] font-bold my-6 underline decoration-4' >Manage Billing</h3>
 							<p className='text-[#7D7987] text-[16px] leading-[30px]'>Save time, prevent disputes and stop chasing payments with automatic subscriptions</p>
 							<p className='text-[#7D7987] text-[16px] leading-[30px] my-2'>Use integrated credit card processing and keep your clients safe with bank level security </p>
 							<p className='text-[#7D7987] text-[16px] leading-[30px]'>
@@ -268,7 +268,7 @@ const Home = () => {
 
 			<section data-aos="zoom-in" className='  mt-20 flex flex-col items-center justify-center p-3 '>
 				{/* title */}
-				<h2 className='text-[28px] md:text-[34px] font-bold my-4'>OUR PARTIAL CLIENT LIST</h2>
+				<h2 className='text-[28px] md:text-[34px] font-bold my-4 ' >OUR PARTIAL CLIENT LIST</h2>
 				{/* hr line */}
 				<div className='line w-[85vw] md:w-[70vw] lg:w-[40vw] bg-black h-[2px] my-3 ' ></div>
 

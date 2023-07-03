@@ -6,11 +6,9 @@ import "aos/dist/aos.css";
 
 import ourHeadquater from "../../../images/contact/contact-our-headquater.png";
 
-
 import OfficeAdd from "../utils/OfficeAdd";
 import { contactMediaList, officeAddList } from "./contactData";
 import Header from "../../Regular/Header";
-
 
 const Contact = () => {
   useEffect(() => {
@@ -79,7 +77,7 @@ const Contact = () => {
         className="contact-our-headquater-bg w-screen   mt-24 md:mt-24 flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:h-[450px] "
       >
         {/* text content */}
-        <div className=" text-white flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mt-[50px] mb-[-10px] lg:mb-[-30px] px-5">
+        <div className=" text-white flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mt-[50px] mb-[-10px] lg:mb-[-30px] h-[400px] px-5">
           <p className="text-[30px] md:text-[40px] font-bold mb-2">
             Our Headquater
           </p>
@@ -101,13 +99,13 @@ const Contact = () => {
             </a>
           </p>
           {/* social imgs */}
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 animate-bounce">
             {contactMediaList?.map((elem) => (
               <img
                 key={elem?.icon}
                 src={elem?.icon}
                 alt=""
-                className="h-[30px] w-[30px]"
+                className="h-[30px] w-[30px] "
               />
             ))}
           </div>
@@ -115,7 +113,7 @@ const Contact = () => {
         {/* img div */}
         <div>
           <img
-            className="h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] md:h-[500px] md:w-[500px] mt-[-50px] md:mt-[80px]"
+            className="h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] md:h-[500px] md:w-[500px] mt-[-50px] md:mt-[80px] hover:scale-90"
             src={ourHeadquater}
             alt=""
           />
@@ -214,20 +212,25 @@ const Contact = () => {
               onChange={(e) => setSubject(e.target.value)}
             />
           </div>
-          {/*  checkbox */}
-          <div className="flex items-center justify-start gap-3 mt-3 sm:items-start sm:justify-start">
-            <input className="text-[18px] h-[14px] w-[14px]" type="checkbox" />
-            <p className="text-[14px]">
-              You accept the terms of service and the privacy policy
-            </p>
-          </div>
+          <div className="mr-[520px]">
+            {/*  checkbox */}
+            <div className="flex items-center justify-start gap-3 mt-3 sm:items-start sm:justify-start">
+              <input
+                className="text-[18px] h-[14px] w-[14px]"
+                type="checkbox"
+              />
+              <p className="text-[14px]">
+                You accept the terms of service and the privacy policy
+              </p>
+            </div>
 
-          <button
-            className="my-4 font-bold w-[170px] h-[40px] rounded-[55px] text-white bg-[#094C99] "
-            onClick={messageSendHandler}
-          >
-            Send message
-          </button>
+            <button
+              className="my-4 font-bold w-[170px] h-[40px] rounded-[55px] text-white bg-[#094C99] animate-bounce"
+              onClick={messageSendHandler}
+            >
+              Send message
+            </button>
+          </div>
         </div>
       </div>
     </>

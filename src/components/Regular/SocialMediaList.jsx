@@ -12,7 +12,7 @@ const SocialMediaList = () => {
       </p>
       {/* hr line */}
       <div className="line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 "></div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex animate-pulse items-center justify-center gap-2">
         {socialMediaList?.map((elem) => (
           <img key={elem?.icon} src={elem?.icon} alt="" />
         ))}

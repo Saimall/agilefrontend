@@ -37,29 +37,30 @@ const Navbar = () => {
   const handleHamburgerIcon = () => {
     setMenuIcon(true);
     setShowMobileNavDiv(true);
+    console.log("helo");
   };
 
   //   close menu when clicked outside
   const handleOnClickedOutsideMobMenu = (e) => {
     console.log(oneRef);
-    if (oneRef.current.contains(e.target)) {
-      setMenuIcon(false);
-      setShowMobileNavDiv(false);
-    }
+    // if (oneRef.current.contains(e.target)) {
+    //   setMenuIcon(false);
+    //   setShowMobileNavDiv(false);
+    // }
   };
 
   return (
     <>
       {/* // main div starts */}
       <div
-        className="relative flex justify-between px-4 items-center lg:justify-start  gap-x-40"
+        className="relative flex justify-between px-4  items-center lg:justify-start"
         style={{ height: "65px" }}
       >
         {/* logo div */}
         <div>
           <Link to="/">
             <img
-              className="md:ml-4 w-[120px] h-[35px] my-3 lg:my-0"
+              className="animate-bounce md:ml-4 w-[120px] h-[35px] my-3 lg:my-0 mr-16"
               src={logo}
               alt="logo"
             />
@@ -69,12 +70,7 @@ const Navbar = () => {
         <div className="hidden lg:flex ">
           <ul className="flex items-center justify-center text-[14px] gap-x-10">
             {navbarMenuList?.map((elem) => {
-              return (
-                <NavbarOption
-                  elem={elem}
-                  onHandleClick={onHandleClick}
-                />
-              );
+              return <NavbarOption elem={elem} onHandleClick={onHandleClick} />;
             })}
           </ul>
         </div>
@@ -107,11 +103,17 @@ const Navbar = () => {
       {ShowMobileNavDiv && (
         <div
           ref={oneRef}
-          className="home-nav-desk-animation-links z-10 mobile-nav-drop-shadow absolute top-[65px]  w-full bg-white "
+          className="home-nav-desk-animation-links z-10 mobile-nav-drop-shadow absolute h-full w-full bg-white "
         >
-          <h1 className="flex items-center justify-center text-[18px] sm:text-[20px] p-2">
-            Hello
-          </h1>
+          <div className="flex items-center justify-center text-[18px] sm:text-[20px] gap-6 m-[120px]  "> {/*position */}
+            <ul className="block items-center justify-center text-[34px] lg:hidden font-bold  ">
+              {navbarMenuList?.map((elem) => {
+                return (
+                  <NavbarOption elem={elem} className="bg-red-500" onHandleClick={onHandleClick} />
+                );
+              })}
+            </ul>
+          </div>
         </div>
       )}
     </>

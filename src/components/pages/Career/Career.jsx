@@ -5,12 +5,10 @@ import { HiArrowRight } from "react-icons/hi";
 import videoImg from "../../../images/careers/video.svg";
 import sliderBluevector from "../../../images/careers/slider-blue-vector.svg";
 import sliderTopImg from "../../../images/careers/slider-top-img.svg";
-
 import Slider from "react-slick";
 import CareerImgCard from "../../career-elements/CareerImgCard";
-
-
 import { Link } from "react-router-dom";
+import Cards from "./Card";
 
 //  swiper imports
 // swiper imgaes
@@ -26,6 +24,8 @@ import "swiper/css/navigation";
 import Header from "../../Regular/Header";
 import SocialMediaList from "../../Regular/SocialMediaList";
 import { impactList } from "./careerData";
+import Card from "./Card";
+
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
@@ -37,7 +37,7 @@ const Career = () => {
   const comment1 = [
     {
       id: 1,
-      title: "atest 1",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
@@ -45,7 +45,7 @@ const Career = () => {
   const comment2 = [
     {
       id: 1,
-      title: "atest 2",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
@@ -53,14 +53,14 @@ const Career = () => {
   const comment3 = [
     {
       id: 1,
-      title: "atest 3",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
   const comment4 = [
     {
       id: 1,
-      title: "atest 4",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
@@ -68,7 +68,7 @@ const Career = () => {
   const comment5 = [
     {
       id: 1,
-      title: "atest 5",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
@@ -76,7 +76,7 @@ const Career = () => {
   const comment6 = [
     {
       id: 1,
-      title: "atest 5",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
@@ -84,7 +84,7 @@ const Career = () => {
   const comment7 = [
     {
       id: 1,
-      title: "atest 5",
+      title: "Agile life",
       disc: " 2 culpa obcaeceritatis minus nihil atque quae veritatis minus nih",
     },
   ];
@@ -141,7 +141,7 @@ const Career = () => {
       <Header image="careers-bg-img" title="Achieve Highest with us" />
       {/* Ready to make impact? */}
       <div data-aos="zoom-in" className="mt-9">
-        <p className="text-[25px] sm:text-[28px] md:text-[30px] text-center text-[#023267]  font-semibold  ">
+        <p className="text-[25px] sm:text-[28px] md:text-[30px] text-center text-[#023267]  font-semibold  animate-bounce">
           Ready to make impact?
         </p>
 
@@ -156,12 +156,15 @@ const Career = () => {
           {/* text content */}
           <div className="flex flex-col items-start justify-center gap-4  sm:gap-10 md:gap-12 lg:gap-20 md:w-[50%] xl:w-[40%]">
             {impactList?.map((elem) => (
-              <div key={elem?.title} className="flex  flex-col items-center md:items-start justify-center w-full ">
+              <div
+                key={elem?.title}
+                className="flex  flex-col items-center md:items-start justify-center w-full "
+              >
                 <p className="text-[18px] sm:text-[20px] text-[#17519BFC] font-semibold  text-center md:text-start mb-2">
-                 {elem?.title}
+                  {elem?.title}
                 </p>
                 <p className="text-[16px] text-center md:text-start leading-[21px]">
-                 {elem?.description}
+                  {elem?.description}
                 </p>
               </div>
             ))}
@@ -187,33 +190,34 @@ const Career = () => {
         </p>
 
         {/* view all div  */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-0 px-3 sm:px-5 md:px-10 lg:px-20 xl:px-44">
+        <div className="flex flex-col md:flex-row items-center justify-center px-3 sm:px-5 md:px-10 lg:px-20 xl:px-44">
           <p className="text-[16px] sm:text-[16px] text-start leading-[27px] mt-7 md:w-[70%] lg:w-[84%] ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque semper vestibulum fermentum. Cras venenatis, nisl sit
             amet molestie viverra,
           </p>
-
-          <Link to="/career-open-job">
-            <button
-              className="text-[14px] text-white font-semibold flex
-            items-center justify-center gap-2 py-1.5 px-3 bg-[#023267] rounded-[10px] "
-            >
-              View all <HiArrowRight />
-            </button>
-          </Link>
+          <div className="ml-16">
+            <Link to="/career-open-job">
+              <button
+                className="text-[14px] text-white font-semibold flex
+            items-center justify-center gap-2 py-2.5 px-3.5 bg-[#023267] rounded-[10px] "
+              >
+                View all <HiArrowRight />
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* slider  */}
+       {/* slider  */}
 
-      <div
+       <div
         data-aos="fade-up"
-        className=" flex items-center justify-center my-[44px] md:px-10 lg:px-20 xl:px-44"
+        className="w-[1500px] flex items-center justify-center ml-[20px] md:px-10 lg:px-20 xl:px-44"
       >
         <Slider className="slider-outter-bus w-[80vw]   " {...settings}>
           {/* card div 1*/}
-          <div className="relative  ml-11 h-[370px]">
+          <div className="relative  mr-10 h-[370px]">
             <img
               className="absoute top-0 left-0"
               src={sliderBluevector}
@@ -231,7 +235,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural 1 technologist
                 </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -243,8 +247,8 @@ const Career = () => {
             </div>
           </div>
 
-          {/* card div 1*/}
-          <div className="relative  ml-11 h-[370px]">
+          {/* card div 2*/}
+          <div className="relative  ml-2 h-[370px]">
             <img
               className="absoute top-0 left-0"
               src={sliderBluevector}
@@ -262,7 +266,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural technologist
                 </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -274,8 +278,8 @@ const Career = () => {
             </div>
           </div>
 
-          {/* card div 1*/}
-          <div className="relative  ml-11 h-[370px]">
+          {/* card div 3*/}
+          <div className="relative  ml-[50px] h-[370px]">
             <img
               className="absoute top-0 left-0"
               src={sliderBluevector}
@@ -293,7 +297,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural technologist
                 </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -305,8 +309,8 @@ const Career = () => {
             </div>
           </div>
 
-          {/* card div 1*/}
-          <div className="relative  ml-11 h-[370px]">
+          {/* card div 4*/}
+          <div className="relative ml-[90px] h-[370px] w-[100px] ">
             <img
               className="absoute top-0 left-0"
               src={sliderBluevector}
@@ -324,7 +328,7 @@ const Career = () => {
                 <p className=" text-[18px] font-bold">
                   Architectural technologist
                 </p>
-                <p className="text-[15px] text-start leading-[14px] w-[260px] mb-3">
+                <p className="text-[15px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
                   Bring your talents to the forefront of business and technology
                   and go as far as your ambition takes you.
                 </p>
@@ -342,13 +346,13 @@ const Career = () => {
 
       <div
         data-aos="fade-up"
-        className="mt-16 px-3 sm:px-7 md:px-10 lg:px-20 xl:px-44"
+        className="mt-16 px-3 sm:px-7 md:px-10 lg:px-20 xl:px-44 "
       >
         <p className="text-[24px] sm:text-[28px] md:text-[28px] leading-[44px] text-[#17519B] text-center font-semibold mt- ">
           Take a snapshot of daily life at Agile Global
         </p>
 
-        <p className="text-[16px] text-center leading-[27px]   mt-6 ">
+        <p className="text-[16px] text-center leading-[27px] mt-6 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           semper vestibulum fermentum. Cras venenatis, nisl sit amet molestie
           viverra,
@@ -357,7 +361,7 @@ const Career = () => {
 
       {/* slider div starts  */}
 
-      <div className=" mt-10 relative flex items-center justify-center px-0 sm:px-0">
+      <div className=" mt-10 ml-6 relative flex items-center justify-center px-0 sm:px-0">
         <Swiper
           effect="coverflow"
           coverflowEffect={{
@@ -370,7 +374,7 @@ const Career = () => {
           loop={true}
           slidesPerView={4}
           centeredSlides
-          //   style={{ height: "300px" }}
+            style={{ height: "550px",width:"1290px", paddingLeft:"2px" ,paddingTop:"20px", marginBottom:"8px" }}
           allowTouchMove={true}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
@@ -402,17 +406,16 @@ const Career = () => {
           }}
         >
           {comment.map((data) => (
-            <div className="center-card">
-              <h2 className="px-4 text-[18px]  font-bold "> {data.title} </h2>
-              <p className="px-4 text-[14px] leading-[14px]  "> {data.disc}</p>
-              <button className="px-4 text-[#17519B] text-[16px] flex items-center justify-center gap-2 font-semibold">
+            <div className="center-card m-4">
+              <h2 className="px-8 text-[18px]  font-bold "> {data.title} </h2>
+              <p className="px-8 text-[14px] leading-[14px]  "> {data.disc}</p>
+              <button className="px-8 text-[#17519B] text-[16px] flex items-center justify-center gap-2  font-semibold">
                 LEARN MORE <HiArrowRight></HiArrowRight>
               </button>
             </div>
           ))}
 
           <SwiperSlide className="slide-style">
-            
             <CareerImgCard></CareerImgCard>
           </SwiperSlide>
           <SwiperSlide className="slide-style">

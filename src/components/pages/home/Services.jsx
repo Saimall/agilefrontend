@@ -97,12 +97,12 @@ const handleServiceSocialBtn = () =>{
     {/* our services div */}
 
     
-   <div data-aos="zoom-in" className='mt-6 flex flex-col items-center justify-center '>
+   <div data-aos="zoom-in" className='mt-6 flex flex-col items-center justify-center  '>
         <p className='text-[38px] leading-[58px] text-[#023267] font-semibold text-center'>Our Services</p>
          
          {/* buttons */}
-          <div className='mt-12 flex items-center justify-center flex-wrap gap-3 md:gap-10'>
-            <button onClick={handleServiceTalkBtn} className={` ${TalkBtn ? 'text-center text-[14px] w-[229px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white  py-[20px] rounded-[52px]' : 'w-[229px] text-center font-semibold  text-[14px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267]  py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Talk </button>
+          <div className='mt-12 flex items-center justify-center flex-wrap gap-3 md:gap-10 '>
+            <button onClick={handleServiceTalkBtn} className={` ${TalkBtn ? 'text-center text-[14px] w-[229px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white  py-[20px] rounded-[52px] ' : 'w-[229px] text-center font-semibold  text-[14px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267]  py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Talk </button>
 
             <button onClick={handleServiceConnectBtn} className={` ${ConnectBtn ? 'w-[229px] text-center text-[14px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white py-[20px] rounded-[52px]' : 'w-[229px] text-center font-semibold  text-[14px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267]  py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Connect </button>
 

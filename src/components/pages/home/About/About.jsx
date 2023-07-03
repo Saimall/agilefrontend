@@ -21,6 +21,7 @@ import {
 import { settings } from "../../utils/utility";
 import AwardCard from "./AwardCard";
 
+const count = [0];
 const About = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -63,7 +64,7 @@ const About = () => {
         {/* card 1 */}
         {gobalSolution?.map((elem) => (
           <div
-            className="hover-drop-shadow relative rounded-[8px] home-sol-outter-card-1-eff w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white"
+            className="hover-drop-shadow relative hover:scale-90 w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white"
             key={elem?.title}
           >
             <img
@@ -150,11 +151,11 @@ const About = () => {
         className="  flex sm:flex-row flex-wrap items-center  justify-center gap-0 mt-28"
       >
         <p className="text-[30px] sm:text-[40px] md:text-[48px] leading-[58px] font-semibold text-center sm:text-start lg:w-[300px] my-7">
-          Our <span className="text-[#17519B] "> Recognitions</span> & Awards
+          Our <span className="text-[#17519B] animate-pulse "> Recognitions</span> & Awards
         </p>
 
         {/* blue and white boxs div starts  */}
-        <div className="flex flex-col items-center justify-center sm:flex-row sm:flex-wrap gap-3 lg:w-[55%]">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 py-12 ">
           {/*blue box 1  */}
           {awardList?.map((elem) => (
             <AwardCard elem={elem} />
@@ -168,46 +169,50 @@ const About = () => {
         className=" about-our-mission-blue-bg w-full py-10 lg:py-0 lg:h-[660px] xl:h-[750px] my-10 flex items-center justify-between"
       >
         <img
-          className="hidden transition  ease-in-out delay-150  hover:scale-110   lg:flex w-[400px] xl:w-[600px]"
+          className="hidden transition  ease-in-out delay-150  hover:scale-90 lg:flex w-[100%] h-240"
           src={BigCircleImg}
           alt=""
         />
         {/* our mission text */}
-        <div className=" xl:mr-72 w-full flex items-center flex-col justify-between bg-yellow-200">
-          <p className="font-bold text-center text-[40px] sm:text-[48px] md:text-[64px] text-white leading-[86px]">
+        <div className=" xl:mr-72  h-full w-full flex flex-col justify-between">
+          <p className="font-bold text-center text-[30px] sm:text-[48px] md:text-[64px] text-white animate-bounce">
             Our Mission
           </p>
 
           {/* outer div of nos.  */}
-          <div className=" flex sm:flex-row w-[80%]  items-start lg:items-center justify-center  bg-orange-500 ">
+          <div className=" flex sm:flex-row w-[80%] mx-auto items-start lg:items-center h-[90%] justify-center flex-wrap pl-20   ">
             {/* no div  1 to 4*/}
-            <div className=" flex flex-col items-start justify-start gap-5">
+            <div className=" grid sm:grid-cols-2 md:grid-cols-2 gap-9 w-[800px] ">
               {missionList?.map((elem) => (
-                <div className="flex items-center justify-center gap-2">
-                  <img src={elem?.image} alt="" />
-                  <p className="text-white text-start text-[24px] leading-[32px]">
-                    {elem?.title}
-                  </p>
+                <div className="flex items-center justify-center w-100 gap-10">
+                  <div className="flex items-center w-[800px] gap-4">
+                    {" "}
+                    <img src={elem?.image} alt="" />
+                    <p className="text-white text-[20px] leading-36 font-bold ">
+                      {elem?.title}
+                    </p>{" "}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
           {/* our 8 values */}
-          <div className=" flex flex-col sm:flex-row items-center justify-center gap-9">
+          <div className=" flex sm:flex-row items-center justify-center gap-12">
             <p className="text-[30px] sm:text-[44px] md:text[64px] text-white  font-semibold">
               Our
-              <span className="text-[40px] sm:text-[54px] md:text-[84px] lg:text-[96px] font-bold ">
+              <span className="text-[40px] sm:text-[54px] md:text-[84px] lg:text-[96px] animate-ping">
                 8
               </span>
               Core Values
             </p>
 
-            <div className="cursor-pointer md:mt-10 about-our-mission-know-more-btn w-[152px] rounded-[60px] flex items-center justify-center  ">
-              <p className="m-3 text-[18px] text-white font-bold flex items-center justify-center gap-3 ">
-                Know more <ImArrowRight2></ImArrowRight2>
-              </p>
-            </div>
+            <p className=" text-[18px] text-white font-bold items-center justify-center gap-3 w-44 flex ">
+              Know more{" "}
+              <span className="flex">
+                <ImArrowRight2></ImArrowRight2>
+              </span>
+            </p>
           </div>
         </div>
       </div>

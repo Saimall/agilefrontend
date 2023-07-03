@@ -72,12 +72,12 @@ const Partner = () => {
         className="cursor-pointer flex items-center justify-center flex-col gap-0 "
       >
         {ShowMoreClientLogo ? (
-          <IoIosArrowUp className="font-bold text-[48px]"></IoIosArrowUp>
+          <IoIosArrowUp className="font-bold text-[48px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 ..."></IoIosArrowUp>
         ) : null}
-        <p className="text-[20px] text-center leading-[30px]">
+        <p className="text-[20px] text-center leading-[30px] ">
           Click to see {ShowMoreClientLogo ? "less" : "more"} companies
         </p>
-        {ShowMoreClientLogo ? null : <img src={upArrow} alt="" />}
+        {ShowMoreClientLogo ? null : <img src={upArrow} className="transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110  duration-300 ..." alt="" />}
       </div>
 
       {/* text p */}

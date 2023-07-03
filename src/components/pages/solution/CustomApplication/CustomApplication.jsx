@@ -47,11 +47,11 @@ const CustomApplication = () => {
         </p>
 
         {/* image and text div */}
-        <div className="flex flex-col items-center justify-center gap-5 lg:flex-row px-3 lg:px-20">
+        <div className=" flex flex-col items-center justify-center gap-5 lg:flex-row px-3 lg:px-20">
           {/* img div */}
 
-          <div className="testting-outter-card-eff rounded-[60px]">
-            <img className="testing-inner-card-img" src={serviceImg} alt="" />
+          <div className="">
+            <img className="hover:scale-110 mr-[60px] testing-inner-card-img" src={serviceImg} alt="" />
           </div>
 
           {/* content div */}
@@ -83,7 +83,7 @@ const CustomApplication = () => {
         data-aos="fade-up"
         className="flex flex-col items-center justify-center mt-10 "
       >
-        <p className="text-[28px] sm:text-[34px] md:text-[48px] font-bold text-center my-5 mb-20">
+        <p className="text-[28px] sm:text-[34px] md:text-[48px] font-bold text-center my-5 mb-20 ">
           Our <span className="text-[#17519B]">Recognitions</span> & Awards
         </p>
 
@@ -93,7 +93,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowServiceImg1((prev) => !prev)}
             onMouseLeave={() => setShowServiceImg1((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px] outline outline-offset-2 outline-blue-500 "
           >
             {showServiceImg1 ? (
               <img src={serviceIcon} alt="" />
@@ -111,7 +111,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowGlobeImg1((prev) => !prev)}
             onMouseLeave={() => setShowGlobeImg1((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showGlobeImg1 ? (
               <img src={globeImg} alt="" />
@@ -129,7 +129,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowServiceImg2((prev) => !prev)}
             onMouseLeave={() => setShowServiceImg2((prev) => !prev)}
-            className="custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showServiceImg2 ? (
               <img src={serviceIcon} alt="" />
@@ -147,7 +147,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowGlobeImg2((prev) => !prev)}
             onMouseLeave={() => setShowGlobeImg2((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showGlobeImg2 ? (
               <img src={globeImg} alt="" />
@@ -165,7 +165,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowGlobeImg3((prev) => !prev)}
             onMouseLeave={() => setShowGlobeImg3((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showGlobeImg3 ? (
               <img src={globeImg} alt="" />
@@ -183,7 +183,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowServiceImg3((prev) => !prev)}
             onMouseLeave={() => setShowServiceImg3((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showServiceImg3 ? (
               <img src={serviceIcon} alt="" />
@@ -201,7 +201,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowGlobeImg4((prev) => !prev)}
             onMouseLeave={() => setShowGlobeImg4((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-white text-black hover:bg-[#023267] hover:text-white mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showGlobeImg4 ? (
               <img src={globeImg} alt="" />
@@ -219,7 +219,7 @@ const CustomApplication = () => {
           <div
             onMouseEnter={() => setShowServiceImg4((prev) => !prev)}
             onMouseLeave={() => setShowServiceImg4((prev) => !prev)}
-            className="transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
+            className="outline outline-offset-2 outline-blue-500 transition-all-2s custom-app-box-drop-shadow p-3 flex flex-col items-start justify-start gap-2 bg-[#023267] text-white hover:bg-white hover:text-black mx-3  sm:w-[263px] sm:mx-0 rounded-[5px]"
           >
             {showServiceImg4 ? (
               <img src={serviceIcon} alt="" />
