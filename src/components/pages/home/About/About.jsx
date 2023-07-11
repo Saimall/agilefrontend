@@ -20,10 +20,14 @@ import {
 
 import { settings } from "../../utils/utility";
 import AwardCard from "./AwardCard";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllAboutAgileCard } from "../../../../redux/action-creator/About-us/about-us-action-creator";
 
-const count = [0];
 const About = () => {
+  const dispatch = useDispatch();
+  const { agileCardData } = useSelector((state) => state.aboutUsReducer);
   useEffect(() => {
+    dispatch(getAllAboutAgileCard());
     Aos.init({ duration: 2000 });
   }, []);
 
@@ -95,13 +99,13 @@ const About = () => {
         {/* cards div */}
         <div className="px-3 flex items-center justify-center flex-wrap sm:px-5 md:px-10 lg:px-20 xl:px-44 gap-5 md:gap-5">
           {/* card 1 */}
-          {planList?.map((elem) => (
+          {agileCardData?.map((elem) =>
             <div className="hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2">
               <img src={elem?.image} alt="" />
               <p className="text-[18px] font-semibold">{elem?.title}</p>
               <p>{elem?.description}</p>
             </div>
-          ))}
+          )}
         </div>
       </div>
 
@@ -151,7 +155,9 @@ const About = () => {
         className="  flex sm:flex-row flex-wrap items-center  justify-center gap-0 mt-28"
       >
         <p className="text-[30px] sm:text-[40px] md:text-[48px] leading-[58px] font-semibold text-center sm:text-start lg:w-[300px] my-7">
-          Our <span className="text-[#17519B] animate-pulse "> Recognitions</span> & Awards
+          Our{" "}
+          <span className="text-[#17519B] animate-pulse "> Recognitions</span> &
+          Awards
         </p>
 
         {/* blue and white boxs div starts  */}
@@ -186,11 +192,10 @@ const About = () => {
               {missionList?.map((elem) => (
                 <div className="flex items-center justify-center w-100 gap-10">
                   <div className="flex items-center w-[800px] gap-4">
-                    {" "}
                     <img src={elem?.image} alt="" />
                     <p className="text-white text-[20px] leading-36 font-bold ">
                       {elem?.title}
-                    </p>{" "}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -208,9 +213,9 @@ const About = () => {
             </p>
 
             <p className=" text-[18px] text-white font-bold items-center justify-center gap-3 w-44 flex ">
-              Know more{" "}
+              Know more
               <span className="flex">
-                <ImArrowRight2></ImArrowRight2>
+                <ImArrowRight2 />
               </span>
             </p>
           </div>
@@ -228,7 +233,7 @@ const About = () => {
         </p>
 
         <button className="text-[18px] bg-white text-[#17519B] font-bold flex items-center justify-center gap-3 px-4 py-2 rounded-[60px]">
-          Know more <ImArrowRight2></ImArrowRight2>
+          Know more <ImArrowRight2 />
         </button>
       </div>
     </>
