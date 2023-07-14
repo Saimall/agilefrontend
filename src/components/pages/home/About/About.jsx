@@ -100,11 +100,13 @@ const About = () => {
         <div className="px-3 flex items-center justify-center flex-wrap sm:px-5 md:px-10 lg:px-20 xl:px-44 gap-5 md:gap-5">
           {/* card 1 */}
           {agileCardData?.map((elem) =>
-            <div className="hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2">
-              <img src={elem?.image} alt="" />
-              <p className="text-[18px] font-semibold">{elem?.title}</p>
-              <p>{elem?.description}</p>
-            </div>
+            elem?.map((item) => (
+              <div className="hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2">
+                <img src={item?.image} alt="" />
+                <p className="text-[18px] font-semibold">{item?.title}</p>
+                <p>{item?.description}</p>
+              </div>
+            ))
           )}
         </div>
       </div>

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-// blue and white div
-import globeImg from "../../../../images/solution/custom-app/globe.svg";
-import serviceIcon from "../../../../images/solution/custom-app/service.svg";
 
 const AwardCard = ({ elem }) => {
   const [showServiceImg1, setShowServiceImg1] = useState(false);
