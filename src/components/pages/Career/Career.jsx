@@ -26,7 +26,6 @@ import SocialMediaList from "../../Regular/SocialMediaList";
 import { impactList } from "./careerData";
 import Card from "./Card";
 
-
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 const Career = () => {
@@ -209,139 +208,146 @@ const Career = () => {
         </div>
       </div>
 
-       {/* slider  */}
+      {/* slider  */}
 
-       <div
+      <div
         data-aos="fade-up"
-        className="w-[1500px] flex items-center justify-center ml-[20px] md:px-10 lg:px-20 xl:px-44"
+        className="flex items-center justify-center p-5 md:p-10 lg:p-20"
       >
-        <Slider className="slider-outter-bus w-[80vw]   " {...settings}>
-          {/* card div 1*/}
-          <div className="relative  mr-10 h-[370px]">
-            <img
-              className="absoute top-0 left-0"
-              src={sliderBluevector}
-              alt=""
-            />
-            {/* upper img and text div */}
-            <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+        <Slider className="slider-outter-bus w-full md:w-[85vw]" {...settings}>
+          {/* Slide 1 */}
+          <div className="relative ml-4 mr-2 md:mr-5 h-[370px] md:h-auto ">
+            <div className="relative  mr-10 h-[370px]">
               <img
-                className="career-inner-card-img"
-                src={sliderTopImg}
+                className="absoute top-0 left-0"
+                src={sliderBluevector}
                 alt=""
               />
-              {/* text div */}
-              <div className="relative ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
-                <p className=" text-[18px] font-bold">
-                  Architectural 1 technologist
-                </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
-                  Bring your talents to the forefront of business and technology
-                  and go as far as your ambition takes you.
-                </p>
+              {/* upper img and text div */}
+              <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+                <img
+                  className="career-inner-card-img"
+                  src={sliderTopImg}
+                  alt=""
+                />
+                {/* text div */}
+                <div className="relative ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
+                  <p className=" text-[18px] font-bold">
+                    Architectural 1 technologist
+                  </p>
+                  <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
+                    Bring your talents to the forefront of business and
+                    technology and go as far as your ambition takes you.
+                  </p>
 
-                <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
-                  LEARN MORE <HiArrowRight></HiArrowRight>
-                </p>
+                  <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
+                    LEARN MORE <HiArrowRight></HiArrowRight>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* card div 2*/}
-          <div className="relative  ml-2 h-[370px]">
-            <img
-              className="absoute top-0 left-0"
-              src={sliderBluevector}
-              alt=""
-            />
-            {/* upper img and text div */}
-            <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+          {/* Slide 2 */}
+          <div className="relative ml-4 mr-2 md:mr-5 h-[370px] md:h-auto">
+            <div className="relative  mr-10 h-[370px]">
               <img
-                className="career-inner-card-img"
-                src={sliderTopImg}
+                className="absoute top-0 left-0"
+                src={sliderBluevector}
                 alt=""
               />
-              {/* text div */}
-              <div className="ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
-                <p className=" text-[18px] font-bold">
-                  Architectural technologist
-                </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
-                  Bring your talents to the forefront of business and technology
-                  and go as far as your ambition takes you.
-                </p>
+              {/* upper img and text div */}
+              <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+                <img
+                  className="career-inner-card-img"
+                  src={sliderTopImg}
+                  alt=""
+                />
+                {/* text div */}
+                <div className="relative ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
+                  <p className=" text-[18px] font-bold">
+                    Architectural 1 technologist
+                  </p>
+                  <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
+                    Bring your talents to the forefront of business and
+                    technology and go as far as your ambition takes you.
+                  </p>
 
-                <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
-                  LEARN MORE <HiArrowRight></HiArrowRight>
-                </p>
+                  <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
+                    LEARN MORE <HiArrowRight></HiArrowRight>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* card div 3*/}
-          <div className="relative  ml-[50px] h-[370px]">
-            <img
-              className="absoute top-0 left-0"
-              src={sliderBluevector}
-              alt=""
-            />
-            {/* upper img and text div */}
-            <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+          {/* Slide 3 */}
+          <div className="relative ml-4 mr-2 md:mr-5 h-[370px] md:h-auto">
+            <div className="relative  mr-10 h-[370px]">
               <img
-                className="career-inner-card-img"
-                src={sliderTopImg}
+                className="absoute top-0 left-0"
+                src={sliderBluevector}
                 alt=""
               />
-              {/* text div */}
-              <div className="ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
-                <p className=" text-[18px] font-bold">
-                  Architectural technologist
-                </p>
-                <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
-                  Bring your talents to the forefront of business and technology
-                  and go as far as your ambition takes you.
-                </p>
+              {/* upper img and text div */}
+              <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+                <img
+                  className="career-inner-card-img"
+                  src={sliderTopImg}
+                  alt=""
+                />
+                {/* text div */}
+                <div className="relative ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
+                  <p className=" text-[18px] font-bold">
+                    Architectural 1 technologist
+                  </p>
+                  <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
+                    Bring your talents to the forefront of business and
+                    technology and go as far as your ambition takes you.
+                  </p>
 
-                <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
-                  LEARN MORE <HiArrowRight></HiArrowRight>
-                </p>
+                  <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
+                    LEARN MORE <HiArrowRight></HiArrowRight>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* card div 4*/}
-          <div className="relative ml-[90px] h-[370px] w-[100px] ">
-            <img
-              className="absoute top-0 left-0"
-              src={sliderBluevector}
-              alt=""
-            />
-            {/* upper img and text div */}
-            <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+          {/* Slide 4 */}
+          <div className="relative ml-4 mr-2 md:mr-5 h-[370px] md:h-auto">
+            <div className="relative  mr-10 h-[370px]">
               <img
-                className="career-inner-card-img"
-                src={sliderTopImg}
+                className="absoute top-0 left-0"
+                src={sliderBluevector}
                 alt=""
               />
-              {/* text div */}
-              <div className="ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
-                <p className=" text-[18px] font-bold">
-                  Architectural technologist
-                </p>
-                <p className="text-[15px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
-                  Bring your talents to the forefront of business and technology
-                  and go as far as your ambition takes you.
-                </p>
+              {/* upper img and text div */}
+              <div className="career-outter-card-eff absolute z-10 top-0 left-3">
+                <img
+                  className="career-inner-card-img"
+                  src={sliderTopImg}
+                  alt=""
+                />
+                {/* text div */}
+                <div className="relative ml-2 z-20 flex flex-col items-start justify-center gap-2 p-3 bg-[#98989849]  ">
+                  <p className=" text-[18px] font-bold">
+                    Architectural 1 technologist
+                  </p>
+                  <p className="text-[14px] text-start leading-[14px] w-[260px] mb-3 tracking-wide leading-normal">
+                    Bring your talents to the forefront of business and
+                    technology and go as far as your ambition takes you.
+                  </p>
 
-                <p className="flex items-center justify-center text-[#17519B] text-[18px] font-semibold gap-2">
-                  LEARN MORE <HiArrowRight></HiArrowRight>
-                </p>
+                  <p className="flex items-center justify-center text-[#17519B] text-[16px] font-semibold gap-2">
+                    LEARN MORE <HiArrowRight></HiArrowRight>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </Slider>
       </div>
-
       {/* Take a snapshot of daily life at Agile Global  */}
 
       <div
@@ -374,7 +380,13 @@ const Career = () => {
           loop={true}
           slidesPerView={4}
           centeredSlides
-            style={{ height: "550px",width:"1290px", paddingLeft:"2px" ,paddingTop:"20px", marginBottom:"8px" }}
+          style={{
+            height: "550px",
+            width: "1290px",
+            paddingLeft: "2px",
+            paddingTop: "20px",
+            marginBottom: "8px",
+          }}
           allowTouchMove={true}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
